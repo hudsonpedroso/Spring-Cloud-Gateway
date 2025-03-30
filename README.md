@@ -12,3 +12,7 @@ Este projeto configura uma arquitetura baseada no **Spring Cloud Gateway** para 
 - **Spring Cloud Gateway**: Roteamento de requisições HTTP, suporte para filtros e manipulação de fluxos reativos.
 - **Eureka Server**: Implementação de um servidor de descoberta de serviços, permitindo que os microsserviços se registrem e se comuniquem entre si.
 - **Configuração de roteamento**: Configuração de rotas para diferentes endpoints através do Spring Cloud Gateway.
+
+## Design
+
+![image](https://github.com/hudsonpedroso/Spring-Cloud-Gateway/blob/main/assets/system%20discovery.jpg)
