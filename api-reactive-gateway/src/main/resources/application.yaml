@@ -1,0 +1,23 @@
+spring.application.name: api-reactive-gateway
+
+server.port: 8080
+
+eureka.client:
+  fetch-registry: true
+  register-with-eureka: true
+  serviceUrl.defaultZone: http://localhost:8761/eureka
+
+spring.cloud.gateway:
+  routes:
+    - id: hello-world
+      uri: http://localhost:8081/hello
+      predicates:
+        - Path=/hello
+    - id: oi-mundo
+      uri: http://localhost:8082/oi
+      predicates:
+        - Path=/oi
+
+  discovery.locator:
+    enabled: true
+    lower-case-service-id: true
